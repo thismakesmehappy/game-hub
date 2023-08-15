@@ -1,6 +1,6 @@
 import { Game } from "../hooks/useGames.ts";
-import { Card, CardBody, Heading, HStack, Image, Text } from "@chakra-ui/react";
-import PlatformIconList from "./PlaformIconList.tsx";
+import { Card, CardBody, Heading, HStack, Image } from "@chakra-ui/react";
+import PlatformIconList from "./PlatformIconList.tsx";
 import { CriticScore } from "./CriticScore.tsx";
 import getCroppedImageUrl from "../services/image-url.ts";
 
