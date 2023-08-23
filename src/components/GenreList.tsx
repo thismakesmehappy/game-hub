@@ -18,6 +18,8 @@ interface Props {
 const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
   const { data, isLoading, error } = useGenres();
 
+  // We can remove these next two lines because we are fetching static date
+  // But we can leave as is in case we change our minds later
   if (error.length > 0) return null;
 
   if (isLoading) return <Spinner />;
