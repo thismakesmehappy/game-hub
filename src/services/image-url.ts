@@ -1,4 +1,5 @@
 const getCroppedImageUrl = (url: string) => {
+  if (!url) return ""; // not all games have images; handle those cases
   const target = "media/";
   // the images coming in are big, and we don't want to download them just
   // to display a thumbnail
